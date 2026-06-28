@@ -1,3 +1,5 @@
+# Load real scene graph data from JSON dataset, NOT random tensors
+data_splits, word2idx, type2idx = load_dataset(dataset_path)
 import torch
 import random
 import numpy as np
