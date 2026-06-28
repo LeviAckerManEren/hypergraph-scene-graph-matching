@@ -1,0 +1,295 @@
+[
+  {
+    "sample_id": 0,
+    "split": "train",
+    "image_graph": {
+      "nodes": [
+        {"id": 0, "label": "child", "type": "object"},
+        {"id": 1, "label": "ball", "type": "object"},
+        {"id": 2, "label": "red", "type": "attribute"},
+        {"id": 3, "label": "hold", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 2, "target": 1, "type": "attribute_link"}
+      ]
+    },
+    "text_graph": {
+      "nodes": [
+        {"id": 0, "label": "child", "type": "object"},
+        {"id": 1, "label": "ball", "type": "object"},
+        {"id": 2, "label": "red", "type": "attribute"},
+        {"id": 3, "label": "hold", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 2, "target": 1, "type": "attribute_link"}
+      ]
+    },
+    "ground_truth": [[0,0], [1,1], [2,2], [3,3]]
+  },
+  {
+    "sample_id": 1,
+    "split": "train",
+    "image_graph": {
+      "nodes": [
+        {"id": 0, "label": "man", "type": "object"},
+        {"id": 1, "label": "bicycle", "type": "object"},
+        {"id": 2, "label": "street", "type": "object"},
+        {"id": 3, "label": "ride", "type": "relation"},
+        {"id": 4, "label": "on", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 1, "target": 4, "type": "relation_link"},
+        {"source": 4, "target": 2, "type": "relation_link"}
+      ]
+    },
+    "text_graph": {
+      "nodes": [
+        {"id": 0, "label": "man", "type": "object"},
+        {"id": 1, "label": "bicycle", "type": "object"},
+        {"id": 2, "label": "street", "type": "object"},
+        {"id": 3, "label": "ride", "type": "relation"},
+        {"id": 4, "label": "on", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 1, "target": 4, "type": "relation_link"},
+        {"source": 4, "target": 2, "type": "relation_link"}
+      ]
+    },
+    "ground_truth": [[0,0], [1,1], [2,2], [3,3], [4,4]]
+  },
+  {
+    "sample_id": 2,
+    "split": "train",
+    "image_graph": {
+      "nodes": [
+        {"id": 0, "label": "dog", "type": "object"},
+        {"id": 1, "label": "grass", "type": "object"},
+        {"id": 2, "label": "brown", "type": "attribute"},
+        {"id": 3, "label": "run", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 2, "target": 0, "type": "attribute_link"}
+      ]
+    },
+    "text_graph": {
+      "nodes": [
+        {"id": 0, "label": "dog", "type": "object"},
+        {"id": 1, "label": "grass", "type": "object"},
+        {"id": 2, "label": "brown", "type": "attribute"},
+        {"id": 3, "label": "run", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 2, "target": 0, "type": "attribute_link"}
+      ]
+    },
+    "ground_truth": [[0,0], [1,1], [2,2], [3,3]]
+  },
+  {
+    "sample_id": 3,
+    "split": "train",
+    "image_graph": {
+      "nodes": [
+        {"id": 0, "label": "girl", "type": "object"},
+        {"id": 1, "label": "book", "type": "object"},
+        {"id": 2, "label": "blue", "type": "attribute"},
+        {"id": 3, "label": "read", "type": "relation"},
+        {"id": 4, "label": "table", "type": "object"},
+        {"id": 5, "label": "on", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 2, "target": 1, "type": "attribute_link"},
+        {"source": 1, "target": 5, "type": "relation_link"},
+        {"source": 5, "target": 4, "type": "relation_link"}
+      ]
+    },
+    "text_graph": {
+      "nodes": [
+        {"id": 0, "label": "girl", "type": "object"},
+        {"id": 1, "label": "book", "type": "object"},
+        {"id": 2, "label": "blue", "type": "attribute"},
+        {"id": 3, "label": "read", "type": "relation"},
+        {"id": 4, "label": "table", "type": "object"},
+        {"id": 5, "label": "on", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 2, "target": 1, "type": "attribute_link"},
+        {"source": 1, "target": 5, "type": "relation_link"},
+        {"source": 5, "target": 4, "type": "relation_link"}
+      ]
+    },
+    "ground_truth": [[0,0], [1,1], [2,2], [3,3], [4,4], [5,5]]
+  },
+  {
+    "sample_id": 4,
+    "split": "train",
+    "image_graph": {
+      "nodes": [
+        {"id": 0, "label": "cat", "type": "object"},
+        {"id": 1, "label": "sofa", "type": "object"},
+        {"id": 2, "label": "white", "type": "attribute"},
+        {"id": 3, "label": "sleep", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 2, "target": 0, "type": "attribute_link"}
+      ]
+    },
+    "text_graph": {
+      "nodes": [
+        {"id": 0, "label": "cat", "type": "object"},
+        {"id": 1, "label": "sofa", "type": "object"},
+        {"id": 2, "label": "white", "type": "attribute"},
+        {"id": 3, "label": "sleep", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 2, "target": 0, "type": "attribute_link"}
+      ]
+    },
+    "ground_truth": [[0,0], [1,1], [2,2], [3,3]]
+  },
+  {
+    "sample_id": 5,
+    "split": "val",
+    "image_graph": {
+      "nodes": [
+        {"id": 0, "label": "boy", "type": "object"},
+        {"id": 1, "label": "balloon", "type": "object"},
+        {"id": 2, "label": "yellow", "type": "attribute"},
+        {"id": 3, "label": "hold", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 2, "target": 1, "type": "attribute_link"}
+      ]
+    },
+    "text_graph": {
+      "nodes": [
+        {"id": 0, "label": "boy", "type": "object"},
+        {"id": 1, "label": "balloon", "type": "object"},
+        {"id": 2, "label": "yellow", "type": "attribute"},
+        {"id": 3, "label": "hold", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 2, "target": 1, "type": "attribute_link"}
+      ]
+    },
+    "ground_truth": [[0,0], [1,1], [2,2], [3,3]]
+  },
+  {
+    "sample_id": 6,
+    "split": "val",
+    "image_graph": {
+      "nodes": [
+        {"id": 0, "label": "car", "type": "object"},
+        {"id": 1, "label": "road", "type": "object"},
+        {"id": 2, "label": "black", "type": "attribute"},
+        {"id": 3, "label": "drive", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 2, "target": 0, "type": "attribute_link"}
+      ]
+    },
+    "text_graph": {
+      "nodes": [
+        {"id": 0, "label": "car", "type": "object"},
+        {"id": 1, "label": "road", "type": "object"},
+        {"id": 2, "label": "black", "type": "attribute"},
+        {"id": 3, "label": "drive", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 2, "target": 0, "type": "attribute_link"}
+      ]
+    },
+    "ground_truth": [[0,0], [1,1], [2,2], [3,3]]
+  },
+  {
+    "sample_id": 7,
+    "split": "test",
+    "image_graph": {
+      "nodes": [
+        {"id": 0, "label": "woman", "type": "object"},
+        {"id": 1, "label": "cup", "type": "object"},
+        {"id": 2, "label": "white", "type": "attribute"},
+        {"id": 3, "label": "hold", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 2, "target": 1, "type": "attribute_link"}
+      ]
+    },
+    "text_graph": {
+      "nodes": [
+        {"id": 0, "label": "woman", "type": "object"},
+        {"id": 1, "label": "cup", "type": "object"},
+        {"id": 2, "label": "white", "type": "attribute"},
+        {"id": 3, "label": "hold", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"},
+        {"source": 2, "target": 1, "type": "attribute_link"}
+      ]
+    },
+    "ground_truth": [[0,0], [1,1], [2,2], [3,3]]
+  },
+  {
+    "sample_id": 8,
+    "split": "test",
+    "image_graph": {
+      "nodes": [
+        {"id": 0, "label": "bird", "type": "object"},
+        {"id": 1, "label": "tree", "type": "object"},
+        {"id": 2, "label": "sing", "type": "relation"},
+        {"id": 3, "label": "on", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 2, "type": "relation_link"},
+        {"source": 2, "target": 1, "type": "relation_link"},
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"}
+      ]
+    },
+    "text_graph": {
+      "nodes": [
+        {"id": 0, "label": "bird", "type": "object"},
+        {"id": 1, "label": "tree", "type": "object"},
+        {"id": 2, "label": "sing", "type": "relation"},
+        {"id": 3, "label": "on", "type": "relation"}
+      ],
+      "edges": [
+        {"source": 0, "target": 2, "type": "relation_link"},
+        {"source": 2, "target": 1, "type": "relation_link"},
+        {"source": 0, "target": 3, "type": "relation_link"},
+        {"source": 3, "target": 1, "type": "relation_link"}
+      ]
+    },
+    "ground_truth": [[0,0], [1,1], [2,2], [3,3]]
+  }
+]
